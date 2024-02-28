@@ -37,8 +37,8 @@ def excute_command(host,ssh_Host):
     # result = ssh_Host.send_command(command)
     sections = [i for i in config['COMMAND']]
     # debug()
-    for secsion in sections: 
-        command = config['COMMAND'][secsion]
+    for section in sections: 
+        command = config['COMMAND'][section]
         result = ssh_Host.send_command(command)
         # result = 'xxxxxx'
         debug(f'Commad: {command} Send to [\033[1;35;40m{host}\033[1;37;40m]', 'alert')
